@@ -1,11 +1,11 @@
 :root {
     --header-txt-color: rgb(255, 208, 0);
     --header-bg-color: rgb(0, 49, 82);
-    --bg-start-color: rgba(0,75,177,1);
-    --bg-end-color: rgba(45,252,253,1);
+    --bg-start-color: rgb(68, 0, 177);
+    --bg-end-color: rgb(138, 215, 191);
     --div-color: rgb(203, 180, 138);
-    --box-bg-color: rgb(42, 71, 56);
-    --p-color: rgb(17, 9, 77);
+    --box-bg-color: rgb(150, 37, 75);
+    --p-color: rgb(9, 26, 77);
     --link-color: rgb(255, 208, 0);
     --p-font: 'Courier New';
     --hover-color: rgb(29, 133, 112);
@@ -55,7 +55,7 @@ div {
 
 div header {
     justify-content: space-evenly;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     text-align: center;
     font-size: 120%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -78,28 +78,38 @@ div header {
 }
 
 wrapper {
-    display: inline-block;
-}
-
-wrapper.a {
     display: flex;
+    flex-direction: row;
 }
 
-.small-box, .big-box {
+.small-box, .big-box, wrapper a {
     background-color: var(--box-bg-color);
     border-style: solid;
     border-color: var(--p-color);
-    border-radius: 5px;
     border-width: 5px;
     box-shadow: 10px 10px 5px var(--site-color);
-    margin: 2%;
+    margin: 3%;
     text-align: center;
-    align-self: center;
     flex: 2;
+    padding: 1% 5% 1% 5%;
 }
 
-.small-box:hover, .big-box:hover {
+.bg-img {
+    margin: 1%;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.big-box:hover, wrapper a:hover {
     background-color: var(--hover-color);
+}
+
+#horiseon-webpage {
+    background-image: url('./assets/images/horiseon-home-page.png');
+}
+
+#my-github {
+    background-image: url('./assets/images/github.PNG');
 }
 
 h1 {
@@ -109,8 +119,11 @@ h1 {
 
 h2 {
     font-size: 120%;
-    display: inline-block;
-    color: var(--p-color);
+    z-index: 5;
+    display: block;
+    margin: auto;
+    align-self: center;
+    color: var(--link-color);
 }
 
 
