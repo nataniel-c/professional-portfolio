@@ -5,4 +5,15 @@ The purpose of this code is to create a professional portfolio website that show
 
 ## Website Link:
 
+https://nataniel-c.github.io/professional-portfolio
+
 ## Website Screenshots:
+
+![screenshot1](./assets/images/Screenshot-1.PNG)
+---
+
+![screenshot2](./assets/images/screenshot-2.PNG)
+---
+
+![screenshot3](./assets/images/screenshot-3.PNG)
+---
