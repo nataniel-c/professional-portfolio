@@ -1,0 +1,143 @@
+:root {
+    --header-txt-color: rgb(255, 208, 0);
+    --header-bg-color: rgb(0, 49, 82);
+    --bg-start-color: rgba(0,75,177,1);
+    --bg-end-color: rgba(45,252,253,1);
+    --div-color: rgb(203, 180, 138);
+    --box-bg-color: rgb(42, 71, 56);
+    --p-color: rgb(17, 9, 77);
+    --link-color: rgb(255, 208, 0);
+    --p-font: 'Courier New';
+    --hover-color: rgb(29, 133, 112);
+    --site-color: rgb(25, 28, 36);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    background-color: var(--site-color);
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5% 1% 5%;
+    background-color: var(--header-bg-color);
+    color: var(--header-txt-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    color: var(--header-txt-color);
+    background-color: var(--box-bg-color);
+    font-size: 120%;
+    font-family: var(--p-font);
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+header nav ul li:hover {
+    background-color: var(--hover-color);
+}
+
+div {
+    background: var(--bg-start-color);
+    background: linear-gradient(0deg, var(--bg-start-color) 0%, var(--bg-end-color) 100%);
+    background-attachment: fixed;
+    border-radius: 10px;
+}
+
+div header {
+    justify-content: space-evenly;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 120%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.info {
+    margin: 5%;
+    padding-bottom: 1%;
+    font-size: 110%;
+    list-style: circle;
+}
+
+.works {
+    margin: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+wrapper {
+    display: inline-block;
+}
+
+wrapper.a {
+    display: flex;
+}
+
+.small-box, .big-box {
+    background-color: var(--box-bg-color);
+    border-style: solid;
+    border-color: var(--p-color);
+    border-radius: 5px;
+    border-width: 5px;
+    box-shadow: 10px 10px 5px var(--site-color);
+    margin: 2%;
+    text-align: center;
+    align-self: center;
+    flex: 2;
+}
+
+.small-box:hover, .big-box:hover {
+    background-color: var(--hover-color);
+}
+
+h1 {
+    font-size: 140%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 120%;
+    display: inline-block;
+    color: var(--p-color);
+}
+
+
+p, .info ul li {
+    font-family: var(--p-font);
+    color: var(--p-color);
+    margin: 2% 10% 1% 10%;
+    font-weight: bold;
+}
+
+a:link, a:visited {
+    color: var(--link-color)
+}
+
+
+@media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
